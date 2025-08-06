@@ -3,44 +3,93 @@
   padding: 0;
   box-sizing: border-box;
 }
-.first-img {
-  background: linear-gradient(140deg, #0891b2 50%, white 50%);
-  height: 400px;
+
+@font-face {
+  font-family: "Roboto";
+  src: url("assets/Roboto/Roboto-VariableFont_wdth\,wght.ttf");
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  src: url("assets/Playfair_Display/static/PlayfairDisplay-Regular.ttf");
+}
+
+.header-background {
+  background-color: #0891b2;
+  height: 360px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.first-img-container {
   position: relative;
-  display: inline-block;
+}
+
+.first-img {
+  position: relative;
+  background-color: red;
+  margin: auto;
+  margin-top: 20px;
+  width: 80%;
 }
 
 .caption {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
+  left: 2%;
+  bottom: 1%;
+  text-wrap: wrap;
   color: white;
   font-weight: bold;
+  font-family: "Playfair Display";
+  font-size: 3.5rem;
+  width: 100%;
+  padding: 10px;
 }
 
 .first-img > img {
-  width: 80%;
+  width: 100%;
+  height: auto;
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-.about > p {
+.about {
+  margin-top: 15px;
+  background-color: white;
+}
+
+.about > .description {
   color: #565656;
+  margin: 10px 15px auto;
+  font-family: "Roboto";
+  font-weight: 400;
 }
 
 .about > h1 {
   text-align: center;
+  font-family: "Playfair Display";
 }
 
 .icons {
   display: flex;
   justify-content: center;
   gap: 20px;
+  margin-top: 10px;
 }
 
 .icons > img {
   height: 30px;
+}
+
+svg {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 192px;
+}
+
+@media screen and (min-width: 500px) {
 }
